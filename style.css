@@ -1,0 +1,486 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: "Alata", sans-serif;
+}
+
+#nav-ul {
+  display: none;
+  width: 100vw;
+  height: 750px;
+  flex-direction: column;
+  text-transform: uppercase;
+  background-color: black;
+  font-size: 20px;
+  line-height: 3;
+  padding-top: 100px;
+}
+
+#nav-ul a {
+  color: white;
+}
+
+#nav-ul.open {
+  display: flex;
+}
+
+
+li {
+  margin-right: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Alata", sans-serif;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hero-div {
+  background-image: url(images/mobile/image-hero.jpg);
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  color: white;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid white;
+  margin: 50% 10%;
+  text-align: left;
+  line-height: 1.3;
+  font-weight: 300;
+  color: white;
+  height: 250px;
+  font-size: 36px;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: "Josefin sans", sans-serif;
+}
+
+.interactive-div {
+  height: 800px;
+  background-color: white;
+  color: hsl(0, 0%, 55%);
+}
+
+.interactive-div img {
+  height: 250px;
+  width: 375px;
+  margin: 100px 0 50px;
+  padding: 0 20px;
+}
+
+.interactive-text-div {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.headline2 {
+  color: black;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 300;
+}
+
+.interactive-text-div p {
+  padding: 20px;
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+
+.mobile-hidden {
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+
+.our-creations-div {
+  height: 800px;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.our-creations-div h3 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.card {
+  width: 90%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  margin: 25px auto;
+  cursor: pointer;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 300;
+}
+
+.card-first-div {
+  padding-top: 80px;
+}
+
+.card:hover {
+  opacity: 0.6;
+}
+
+.card1 {
+  background-image: url(images/mobile/image-deep-earth.jpg);
+}
+
+.card2 {
+  background-image: url(images/mobile/image-night-arcade.jpg);
+}
+
+.card3 {
+  background-image: url(images/mobile/image-soccer-team.jpg);
+}
+
+.card4 {
+  background-image: url(images/mobile/image-grid.jpg);
+}
+
+.card5 {
+  background-image: url(images/mobile/image-from-above.jpg);
+}
+
+.card6 {
+  background-image: url(images/mobile/image-pocket-borealis.jpg);
+}
+
+.card7 {
+  background-image: url(images/mobile/image-curiosity.jpg);
+}
+
+.card8 {
+  background-image: url(images/mobile/image-fisheye.jpg);
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.seeAllBtn {
+  padding:  20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  text-align: center;
+  font-family: "Josefin sans", sans-serif;
+  font-weight: 300;
+}
+
+.footer {
+  height: 400px;
+  background-color: white;
+  text-align: center;
+  margin-top: 100px;
+  line-height: 3;
+  background-color: black;
+  color: white;
+}
+
+.logo-footer {
+  margin-top: 10px;
+}
+
+.icons-row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.icons-row img {
+  margin: 10px;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-family: "Alata", sans-serif;
+}
+
+.square {
+  height: 0;
+  overflow: hidden;
+}
+
+.mobile-hidden {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (min-width: 768px) {
+
+  .hero-div {
+    background-image: url(images/desktop/image-hero.jpg);
+    padding: 0;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    color: white;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+  }
+
+
+  #nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: inherit;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 0;
+    color: white;
+    height: inherit;
+    text-transform: capitalize;
+  }
+
+  #nav-ul li {
+    margin-right: 20px;
+  }
+
+  #nav-ul.open {
+    display: none;
+    height: 0;
+    overflow: none;
+  }
+
+  .hamburger {
+    display: none;
+    height: 0;
+    overflow: none;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid white;
+    margin: 100px 50px;
+    text-align: left;
+    line-height: 1.3;
+    font-weight: 300;
+    color: white;
+    height: 200px;
+    width: 50%;
+    font-size: 36px;
+    padding: 30px;
+    text-transform: uppercase;
+  }
+
+  .interactive-div {
+    display: flex;
+    height: 600px;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .interactive-div img {
+    height: 500px;
+    width: 700px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .square {
+    height: 200px;
+    width: 200px;
+    background-color: #c469ca;
+    outline-color: #c469ca;
+    margin-bottom: 50px;
+  }
+
+  .interactive-text-div  {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .headline2 {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
+  .interactive-text-div p {
+    padding: 0 50px;
+    max-width: 70ch;
+    font-size: 20px;
+  }
+
+  .our-creations-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: "Josefin sans", sans-serif;
+    font-weight: 300;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 100px;
+  }
+
+  .card {
+    width: 250px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: white;
+    font-size: 28px;
+    padding: 20px;
+    margin: 25px auto;
+    cursor: pointer;
+  }
+
+  .card-first-div {
+    padding-top: 310px;
+  }
+
+  .card1 {
+    background-image: url(images/desktop/image-deep-earth.jpg);
+  }
+
+  .card2 {
+    background-image: url(images/desktop/image-night-arcade.jpg);
+  }
+
+  .card3 {
+    background-image: url(images/desktop/image-soccer-team.jpg);
+  }
+
+  .card4 {
+    background-image: url(images/desktop/image-grid.jpg);
+  }
+
+  .card5 {
+    background-image: url(images/desktop/image-from-above.jpg);
+  }
+
+  .card6 {
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .card7 {
+    background-image: url(images/desktop/image-curiosity.jpg);
+  }
+
+  .card8 {
+    background-image: url(images/desktop/image-fisheye.jpg);
+  }
+
+  .desktop-hidden {
+    display: none;
+    height: 0;
+    overflow: hidden;
+  }
+
+
+  .footer {
+    padding: 20px;
+    height: 150px;
+    background-color: white;
+    text-align: left;
+    margin-top: 0;
+    line-height: 1;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+                          "logo . icons-row"
+                          "nav  . copyright";
+  }
+
+  .footer-ul {
+    display: flex;
+    grid-area: nav;
+  }
+
+  .logo-footer {
+    margin-top: 0;
+    grid-area: logo;
+  }
+
+  .icons-row {
+    grid-area: icons-row;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .icons-row img {
+    height: 24px;
+    width: 24px;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    margin-top: 0;
+  }
+
+  .mobile-hidden {
+    display: flex;
+    height: auto;
+  }
+
+}
