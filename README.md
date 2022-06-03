@@ -12,7 +12,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -47,5 +46,3 @@ Users should be able to:
 - Semantic HTML
 - The background of hamburger could be changed but I left the file alone.
 - Can see a line on the square next to the image. 
-
-### Useful resources
